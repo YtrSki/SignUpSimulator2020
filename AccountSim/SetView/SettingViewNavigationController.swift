@@ -12,6 +12,5 @@ class SettingViewNavigationController: UINavigationController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "Setting"
     }
 }

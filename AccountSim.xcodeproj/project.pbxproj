@@ -16,9 +16,8 @@
 		DB14B5C424445455004F3F75 /* BrowserViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB14B5C324445455004F3F75 /* BrowserViewController.storyboard */; };
 		DB14B5C92444566B004F3F75 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB14B5C82444566B004F3F75 /* BrowserViewController.swift */; };
 		DB14B5CB244471A2004F3F75 /* HomeBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB14B5CA244471A2004F3F75 /* HomeBaseViewController.swift */; };
-		DBCC188B245A79C400F6E3C2 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCC188A245A79C400F6E3C2 /* SettingViewController.swift */; };
-		DBCC188E246A418A00F6E3C2 /* SettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBCC188D246A418A00F6E3C2 /* SettingViewController.storyboard */; };
-		DBCC1890246A464800F6E3C2 /* SettingViewNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCC188F246A464800F6E3C2 /* SettingViewNavigationController.swift */; };
+		DBCC1892246A61E100F6E3C2 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCC1891246A61E100F6E3C2 /* SettingViewController.swift */; };
+		DBCC1894246A61F400F6E3C2 /* SettingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBCC1893246A61F400F6E3C2 /* SettingViewController.storyboard */; };
 		E1D84313243B813F004137EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D84312243B813F004137EB /* AppDelegate.swift */; };
 		E1D84315243B813F004137EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D84314243B813F004137EB /* SceneDelegate.swift */; };
 		E1D84317243B813F004137EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D84316243B813F004137EB /* ViewController.swift */; };
@@ -60,9 +59,8 @@
 		DB14B5C324445455004F3F75 /* BrowserViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BrowserViewController.storyboard; sourceTree = "<group>"; };
 		DB14B5C82444566B004F3F75 /* BrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
 		DB14B5CA244471A2004F3F75 /* HomeBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBaseViewController.swift; sourceTree = "<group>"; };
-		DBCC188A245A79C400F6E3C2 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
-		DBCC188D246A418A00F6E3C2 /* SettingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingViewController.storyboard; sourceTree = "<group>"; };
-		DBCC188F246A464800F6E3C2 /* SettingViewNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewNavigationController.swift; sourceTree = "<group>"; };
+		DBCC1891246A61E100F6E3C2 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		DBCC1893246A61F400F6E3C2 /* SettingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingViewController.storyboard; sourceTree = "<group>"; };
 		E075BDDB37BDB517295010EA /* Pods-AccountSim-AccountSimUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccountSim-AccountSimUITests.release.xcconfig"; path = "Target Support Files/Pods-AccountSim-AccountSimUITests/Pods-AccountSim-AccountSimUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E1D8430F243B813F004137EB /* AccountSim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccountSim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D84312243B813F004137EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -158,9 +156,8 @@
 		DBCC188C246A3F3300F6E3C2 /* SetView */ = {
 			isa = PBXGroup;
 			children = (
-				DBCC188A245A79C400F6E3C2 /* SettingViewController.swift */,
-				DBCC188D246A418A00F6E3C2 /* SettingViewController.storyboard */,
-				DBCC188F246A464800F6E3C2 /* SettingViewNavigationController.swift */,
+				DBCC1891246A61E100F6E3C2 /* SettingViewController.swift */,
+				DBCC1893246A61F400F6E3C2 /* SettingViewController.storyboard */,
 			);
 			path = SetView;
 			sourceTree = "<group>";
@@ -344,7 +341,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBCC188E246A418A00F6E3C2 /* SettingViewController.storyboard in Resources */,
+				DBCC1894246A61F400F6E3C2 /* SettingViewController.storyboard in Resources */,
 				DB14B5C424445455004F3F75 /* BrowserViewController.storyboard in Resources */,
 				DB14B5BA24443E17004F3F75 /* HomeBaseViewController.storyboard in Resources */,
 				E1D8431F243B8140004137EB /* LaunchScreen.storyboard in Resources */,
@@ -480,10 +477,9 @@
 				E1D84317243B813F004137EB /* ViewController.swift in Sources */,
 				DB14B5C92444566B004F3F75 /* BrowserViewController.swift in Sources */,
 				E1D84313243B813F004137EB /* AppDelegate.swift in Sources */,
-				DBCC188B245A79C400F6E3C2 /* SettingViewController.swift in Sources */,
+				DBCC1892246A61E100F6E3C2 /* SettingViewController.swift in Sources */,
 				DB14B5BE2444501B004F3F75 /* Values.swift in Sources */,
 				DB14B5CB244471A2004F3F75 /* HomeBaseViewController.swift in Sources */,
-				DBCC1890246A464800F6E3C2 /* SettingViewNavigationController.swift in Sources */,
 				E1D84315243B813F004137EB /* SceneDelegate.swift in Sources */,
 				DB14B5BC24443E29004F3F75 /* HomeViewController.swift in Sources */,
 			);

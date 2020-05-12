@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rgz-IY-Isy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tde-i1-RSq">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -7,38 +7,46 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Setting View Navigation Controller-->
-        <scene sceneID="AQv-ao-0Ad">
+        <!--Navigation Controller-->
+        <scene sceneID="8AJ-f4-o2w">
             <objects>
-                <navigationController id="Rgz-IY-Isy" customClass="SettingViewNavigationController" customModule="AccountSim" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="ACT-WK-7I0">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                <navigationController id="tde-i1-RSq" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="QrB-9f-9vO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="104.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <outlet property="navigationBar" destination="ACT-WK-7I0" id="LLe-Oh-LjI"/>
-                        <segue destination="KuN-PD-wAy" kind="relationship" relationship="rootViewController" id="5SW-tC-hjt"/>
+                        <segue destination="T3n-os-ytC" kind="relationship" relationship="rootViewController" id="tn7-qF-p6w"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fcM-qk-SWs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bwc-GR-ScU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1338" y="-172"/>
+            <point key="canvasLocation" x="-990" y="-38"/>
         </scene>
-        <!--Setting View Controller-->
-        <scene sceneID="zCl-kc-sOc">
+        <!--SettingViewController-->
+        <scene sceneID="Wkd-2q-zTD">
             <objects>
-                <viewController storyboardIdentifier="SettingViewController" id="KuN-PD-wAy" customClass="SettingViewController" customModule="AccountSim" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="GmL-p3-omC">
+                <viewController storyboardIdentifier="SettingViewController" title="SettingViewController" id="T3n-os-ytC" customClass="SettingViewController" customModule="AccountSim" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bLq-Hx-5XE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="jWl-nR-heF"/>
+                        <viewLayoutGuide key="safeArea" id="k7n-r5-5Al"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Aut-ea-VrM"/>
+                    <navigationItem key="navigationItem" title="設定" id="E5T-O9-1Uk">
+                        <barButtonItem key="rightBarButtonItem" title="閉じる" image="xmark.circle.fill" catalog="system" id="dnN-tP-eKR">
+                            <connections>
+                                <action selector="閉じるボタン:" destination="T3n-os-ytC" id="A8n-Pt-rCW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8Dc-LG-q4c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zx1-Og-GJe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-443" y="-172"/>
+            <point key="canvasLocation" x="-217" y="-38"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="xmark.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
 </document>
