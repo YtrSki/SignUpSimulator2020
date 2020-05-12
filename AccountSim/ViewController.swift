@@ -20,51 +20,42 @@ class ViewController: UIViewController {
         練習モード = 1
         print(練習モード)
         
-        let transition = CATransition()
-        transition.duration = 0.5
-        transition.type = CATransitionType.reveal
-        transition.subtype = CATransitionSubtype.fromTop
-        view.window!.layer.add(transition, forKey: kCATransition)
+        homeBaseViewController?.modalTransitionStyle = .flipHorizontal
         homeBaseViewController?.modalPresentationStyle = .fullScreen
-        self.present(homeBaseViewController!, animated: false)
+        self.present(homeBaseViewController!, animated: true)
     }
     @IBAction func ログインの練習関数(_ sender: Any) {
         練習モード = 2
         print(練習モード)
         
-        let transition = CATransition()
-        transition.duration = 0.5
-        transition.type = CATransitionType.reveal
-        transition.subtype = CATransitionSubtype.fromTop
-        view.window!.layer.add(transition, forKey: kCATransition)
+        homeBaseViewController?.modalTransitionStyle = .flipHorizontal
         homeBaseViewController?.modalPresentationStyle = .fullScreen
-        self.present(homeBaseViewController!, animated: false)
+        self.present(homeBaseViewController!, animated: true)
     }
     @IBAction func パスワードを忘れた時の練習関数(_ sender: Any) {
         練習モード = 3
         print(練習モード)
         
-        let transition = CATransition()
-        transition.duration = 0.5
-        transition.type = CATransitionType.reveal
-        transition.subtype = CATransitionSubtype.fromTop
-        view.window!.layer.add(transition, forKey: kCATransition)
+        homeBaseViewController?.modalTransitionStyle = .flipHorizontal
         homeBaseViewController?.modalPresentationStyle = .fullScreen
-        self.present(homeBaseViewController!, animated: false)
+        self.present(homeBaseViewController!, animated: true)
     }
     @IBAction func 初めから自分で練習関数(_ sender: Any) {
         練習モード = 4
         print(練習モード)
         
-        let transition = CATransition()
-        transition.duration = 0.5
-        transition.type = CATransitionType.reveal
-        transition.subtype = CATransitionSubtype.fromTop
-        view.window!.layer.add(transition, forKey: kCATransition)
+        homeBaseViewController?.modalTransitionStyle = .flipHorizontal
         homeBaseViewController?.modalPresentationStyle = .fullScreen
-        self.present(homeBaseViewController!, animated: false)
+        self.present(homeBaseViewController!, animated: true)
     }
-    
+//    トランジションの別のやり方
+//    let transition = CATransition()
+//    transition.duration = 0.5
+//    transition.type = CATransitionType.reveal
+//    transition.subtype = CATransitionSubtype.fromTop
+//    view.window!.layer.add(transition, forKey: kCATransition)
+//    homeBaseViewController?.modalPresentationStyle = .fullScreen
+//    self.present(homeBaseViewController!, animated: false)
     
     override func viewDidLoad() {
         super.viewDidLoad()
