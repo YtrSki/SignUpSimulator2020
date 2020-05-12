@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rgz-IY-Isy">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Setting View Navigation Controller-->
+        <scene sceneID="AQv-ao-0Ad">
+            <objects>
+                <navigationController id="Rgz-IY-Isy" customClass="SettingViewNavigationController" customModule="AccountSim" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="ACT-WK-7I0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <outlet property="navigationBar" destination="ACT-WK-7I0" id="LLe-Oh-LjI"/>
+                        <segue destination="KuN-PD-wAy" kind="relationship" relationship="rootViewController" id="5SW-tC-hjt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fcM-qk-SWs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1338" y="-172"/>
+        </scene>
+        <!--Setting View Controller-->
+        <scene sceneID="zCl-kc-sOc">
+            <objects>
+                <viewController storyboardIdentifier="SettingViewController" id="KuN-PD-wAy" customClass="SettingViewController" customModule="AccountSim" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GmL-p3-omC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="jWl-nR-heF"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Aut-ea-VrM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Dc-LG-q4c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-443" y="-172"/>
+        </scene>
+    </scenes>
+</document>

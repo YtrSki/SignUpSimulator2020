@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  AccountSim
 //
-//  Created by Takumi Muraishi on 2020/04/07.
-//  Copyright © 2020 Takumi Muraishi. All rights reserved.
+//  Created by Yutaro Sakai on 2020/04/07.
+//  Copyright © 2020 Yutaro Sakai. All rights reserved.
 //
 
 import UIKit
