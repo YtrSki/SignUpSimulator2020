@@ -18,6 +18,8 @@ class HomeViewController: UIViewController{
     }
     
     @IBAction func メールアイコンボタン(_ sender: Any) {
+        let mailViewController = UIStoryboard(name: "MailViewController", bundle: nil).instantiateInitialViewController()
+        self.present(mailViewController!, animated: true)
     }
     
     @IBAction func ブラウザアイコンボタン(_ sender: Any) {
@@ -30,6 +32,6 @@ class HomeViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        壁紙画像 = UIImageView(image: セットされた壁紙)
     }
 }

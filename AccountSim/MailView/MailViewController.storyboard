@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iaO-5G-HIh">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="K3X-wG-rPC">
+            <objects>
+                <navigationController id="iaO-5G-HIh" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="GZJ-YF-7Sn">
+                        <rect key="frame" x="0.0" y="44" width="414" height="104.5"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="u65-wJ-Kc3" kind="relationship" relationship="rootViewController" id="qqI-ON-lrR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="on4-lP-ino" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1100" y="-96"/>
+        </scene>
+        <!--メール-->
+        <scene sceneID="Rat-pf-ShZ">
+            <objects>
+                <viewController storyboardIdentifier="MailViewController" id="u65-wJ-Kc3" customClass="MailViewController" customModule="AccountSim" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LIE-Md-Vgy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0yR-w6-Xv1">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SampleCell" id="mCd-Fy-8xw">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mCd-Fy-8xw" id="XcU-ZT-Dze">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="u65-wJ-Kc3" id="ib7-dz-q6I"/>
+                                    <outlet property="delegate" destination="u65-wJ-Kc3" id="XBN-KS-umI"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="0yR-w6-Xv1" firstAttribute="leading" secondItem="Nv8-AW-mmC" secondAttribute="leading" id="9ca-Th-8PX"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="0yR-w6-Xv1" secondAttribute="bottom" constant="-34" id="A2Y-BT-grb"/>
+                            <constraint firstItem="0yR-w6-Xv1" firstAttribute="top" secondItem="LIE-Md-Vgy" secondAttribute="topMargin" constant="-44" id="HZF-ph-I3x"/>
+                            <constraint firstItem="0yR-w6-Xv1" firstAttribute="centerX" secondItem="LIE-Md-Vgy" secondAttribute="centerX" id="awl-LB-xcS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Nv8-AW-mmC"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="メール" id="lGG-sQ-iAf"/>
+                    <connections>
+                        <outlet property="TableView" destination="0yR-w6-Xv1" id="SHU-Al-5SW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bde-Oy-OVG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-28.985507246376812" y="-96.428571428571431"/>
+        </scene>
+    </scenes>
+</document>

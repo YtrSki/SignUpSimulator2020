@@ -15,10 +15,11 @@ class SettingViewController: FormViewController {
     override func viewDidLoad(){
         super.viewDidLoad()
         
-        form +++ Section("一般")
+        form
+        +++ Section("一般")
             <<< TextRow(){
                 $0.title = "テキスト入力"
                 $0.placeholder = "入力欄"
-        }
+            }
     }
 }
