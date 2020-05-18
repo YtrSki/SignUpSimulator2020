@@ -11,12 +11,14 @@ import UIKit
 class MailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var TableView: UITableView!
+    @IBAction func 閉じるボタン(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     var contents = ["abc", "def", "ghi", "jkl"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

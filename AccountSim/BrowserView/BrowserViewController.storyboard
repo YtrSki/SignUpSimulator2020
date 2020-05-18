@@ -16,11 +16,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jYH-QH-Gbq">
-                                <rect key="frame" x="0.0" y="44" width="453" height="936"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <connections>
                                     <segue destination="7NI-XQ-tX9" kind="embed" id="svz-ew-Fda"/>
                                 </connections>
                             </containerView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TAT-zM-NMv">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="インターネットブラウザー" id="FPh-WF-aDb">
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="xmark.circle.fill" catalog="system" id="Cex-8S-O6n">
+                                            <connections>
+                                                <action selector="閉じる:" destination="kUP-wC-qBE" id="5Xt-er-66t"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Skn-NC-Tbr">
                                 <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                                 <items>
@@ -36,31 +48,19 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TAT-zM-NMv">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <items>
-                                    <navigationItem title="インターネットブラウザー" id="FPh-WF-aDb">
-                                        <barButtonItem key="rightBarButtonItem" title="Item" image="xmark.circle.fill" catalog="system" id="Cex-8S-O6n">
-                                            <connections>
-                                                <action selector="閉じる:" destination="kUP-wC-qBE" id="5Xt-er-66t"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="TAT-zM-NMv" firstAttribute="top" secondItem="AjL-Jb-Dzq" secondAttribute="top" id="8hl-JA-3am"/>
-                            <constraint firstAttribute="trailing" secondItem="Skn-NC-Tbr" secondAttribute="trailing" id="9PG-5L-Xtw"/>
-                            <constraint firstItem="TAT-zM-NMv" firstAttribute="trailing" secondItem="Skn-NC-Tbr" secondAttribute="trailing" id="Hyp-FA-Cma"/>
-                            <constraint firstItem="jYH-QH-Gbq" firstAttribute="leading" secondItem="AjL-Jb-Dzq" secondAttribute="leading" id="Xef-rf-0Dw"/>
-                            <constraint firstItem="Skn-NC-Tbr" firstAttribute="leading" secondItem="eP9-K2-FkX" secondAttribute="leading" id="bGS-hh-7Nn"/>
-                            <constraint firstItem="jYH-QH-Gbq" firstAttribute="top" secondItem="AjL-Jb-Dzq" secondAttribute="top" id="cKg-Xj-fbV"/>
-                            <constraint firstItem="TAT-zM-NMv" firstAttribute="leading" secondItem="Skn-NC-Tbr" secondAttribute="leading" id="ki8-Ta-qLy"/>
-                            <constraint firstAttribute="bottom" secondItem="Skn-NC-Tbr" secondAttribute="bottom" constant="34" id="ls5-vS-HBX"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="jYH-QH-Gbq" secondAttribute="bottom" constant="-118" id="xB5-g3-edC"/>
-                            <constraint firstItem="jYH-QH-Gbq" firstAttribute="trailing" secondItem="AjL-Jb-Dzq" secondAttribute="trailing" constant="39" id="ylC-iX-505"/>
+                            <constraint firstItem="Skn-NC-Tbr" firstAttribute="top" secondItem="jYH-QH-Gbq" secondAttribute="bottom" id="5WM-Lc-vio"/>
+                            <constraint firstItem="TAT-zM-NMv" firstAttribute="top" secondItem="AjL-Jb-Dzq" secondAttribute="top" id="Eqb-U2-Wx1"/>
+                            <constraint firstItem="Skn-NC-Tbr" firstAttribute="leading" secondItem="AjL-Jb-Dzq" secondAttribute="leading" id="JXB-6Z-lRe"/>
+                            <constraint firstItem="TAT-zM-NMv" firstAttribute="trailing" secondItem="AjL-Jb-Dzq" secondAttribute="trailing" id="MF5-cZ-v54"/>
+                            <constraint firstItem="Skn-NC-Tbr" firstAttribute="bottom" secondItem="AjL-Jb-Dzq" secondAttribute="bottom" id="Nwh-HO-5yO"/>
+                            <constraint firstItem="jYH-QH-Gbq" firstAttribute="top" secondItem="TAT-zM-NMv" secondAttribute="bottom" constant="-44" id="Rva-Vp-aZc"/>
+                            <constraint firstItem="jYH-QH-Gbq" firstAttribute="trailing" secondItem="AjL-Jb-Dzq" secondAttribute="trailing" id="WF6-cd-xqS"/>
+                            <constraint firstItem="TAT-zM-NMv" firstAttribute="leading" secondItem="AjL-Jb-Dzq" secondAttribute="leading" id="b1u-W6-tga"/>
+                            <constraint firstItem="Skn-NC-Tbr" firstAttribute="trailing" secondItem="AjL-Jb-Dzq" secondAttribute="trailing" id="bsm-bv-Ngw"/>
+                            <constraint firstItem="jYH-QH-Gbq" firstAttribute="leading" secondItem="AjL-Jb-Dzq" secondAttribute="leading" id="e5U-kp-Lvu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AjL-Jb-Dzq"/>
                     </view>
@@ -79,7 +79,7 @@
             <objects>
                 <viewController id="7NI-XQ-tX9" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t6Q-Id-aw1">
-                        <rect key="frame" x="0.0" y="0.0" width="453" height="936"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="769"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="hqT-jG-5hd"/>

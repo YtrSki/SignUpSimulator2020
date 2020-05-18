@@ -59,7 +59,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Nv8-AW-mmC"/>
                     </view>
-                    <navigationItem key="navigationItem" title="メール" id="lGG-sQ-iAf"/>
+                    <navigationItem key="navigationItem" title="メール" id="lGG-sQ-iAf">
+                        <barButtonItem key="rightBarButtonItem" title="閉じる" image="xmark.circle.fill" catalog="system" id="me2-8T-FGS">
+                            <connections>
+                                <action selector="閉じるボタン:" destination="u65-wJ-Kc3" id="4zj-MF-ShB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="TableView" destination="0yR-w6-Xv1" id="SHU-Al-5SW"/>
                     </connections>
@@ -69,4 +75,7 @@
             <point key="canvasLocation" x="-28.985507246376812" y="-96.428571428571431"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="xmark.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
 </document>
