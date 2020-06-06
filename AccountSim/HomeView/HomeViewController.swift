@@ -28,6 +28,8 @@ class HomeViewController: UIViewController{
     }
     
     @IBAction func smartPayアイコンボタン(_ sender: Any) {
+        let smartPayTopViewController = UIStoryboard(name: "SmartPayTopViewController", bundle: nil).instantiateInitialViewController()
+        self.present(smartPayTopViewController!, animated: true)
     }
     
     override func viewDidLoad() {

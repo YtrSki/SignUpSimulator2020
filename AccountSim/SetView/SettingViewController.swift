@@ -21,5 +21,10 @@ class SettingViewController: FormViewController {
                 $0.title = "テキスト入力"
                 $0.placeholder = "入力欄"
             }
+            <<< ButtonRow() {
+                $0.title = "壁紙"
+            }
     }
 }
+
+//UIStoryboard(name: "SettingWallpaperViewController", bundle: nil).instantiateInitialViewController()

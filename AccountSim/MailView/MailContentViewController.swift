@@ -2,28 +2,22 @@
 //  MailContentViewController.swift
 //  AccountSim
 //
-//  Created by Yutaro Sakai on 2020/05/18.
+//  Created by Yutaro Sakai on 2020/06/06.
 //  Copyright © 2020 Takumi Muraishi. All rights reserved.
 //
 
-import Eureka
+import UIKit
 
-class MailContentViewController: FormViewController {
+class MailContentViewController: UIViewController {
+    
+    //var メール内容一式: メール内容
+    
+    @IBOutlet weak var メールタイトル: UILabel!
+    @IBOutlet weak var メール差出人: UILabel!
+    @IBOutlet weak var メール本文: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.navigationController?.top
-        self.navigationController?.title = "メール内容"
-        
-        form +++ Section()
-            <<< LabelRow(){
-                $0.title = "メールタイトル"
-                $0.cellStyle = .value1
-            }
-            <<< LabelRow(){
-                $0.title = "メール差出人"
-            }
-        
+        self.navigationItem.title = ""
     }
 }
