@@ -24,6 +24,9 @@ class SettingViewController: FormViewController {
             <<< ButtonRow() {
                 $0.title = "壁紙"
             }
+            <<< ButtonRow() {
+                $0.title = "リセット"
+            }
     }
 }
 
