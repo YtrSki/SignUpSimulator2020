@@ -28,3 +28,4 @@ class SettingViewController: FormViewController {
 }
 
 //UIStoryboard(name: "SettingWallpaperViewController", bundle: nil).instantiateInitialViewController()
+//testBranch_commandLine
